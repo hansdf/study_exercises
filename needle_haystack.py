@@ -6,4 +6,4 @@ def find_needle(needle, haystack):
     index = 0
     for letter in haystack:
         
-    pass
+        pass

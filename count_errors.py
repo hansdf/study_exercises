@@ -1,3 +1,6 @@
+# Given a input of a string, find how many errors the user has entered. 
+# An error is anything that is not an letter, number os a space.
+
 phrase = str(input("Enter a phrase: "))
 
 allowed_characters = set("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ")

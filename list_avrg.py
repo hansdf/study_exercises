@@ -1,3 +1,5 @@
+# Get the average from a list of numbers. The average is the sum of all the numbers divided by the amount of items.
+
 nums = [10, 5, 8, 20, 300, 99, 150, 2, 10, 10, 10, 5, 20, 5, 300, 99]
 
 def list_average(nums):

@@ -6,7 +6,7 @@ name = input("What's your name? ")
 final_age = (2024+100) - int(age)
 print(f"{name} will be 100 years old in the year {final_age}.")
 
-
+hello - ""
 
 strings = "texto"
 ints = 123

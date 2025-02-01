@@ -1,16 +1,16 @@
-# Create a program that asks the user to enter their name and their age. 
-# Print out a message addressed to them that tells them the year that they will turn 100 years old.
+n_list1 = [1, 2, 3, 4, 5, 6]
+n_list2 = [5, 6, 7, 8, 9, 10]
+n_list3 = set()
 
-age = input("Please enter your age: ")
-name = input("What's your name? ")
-final_age = (2024+100) - int(age)
-print(f"{name} will be 100 years old in the year {final_age}.")
+for n1, n2 in zip(n_list1, n_list2):
+    # print(n1, n2)
+    
+    if n1 in n_list1 and n1 in n_list2:
+        print("if n1 in both lists reached")
+        n_list3.add(n1)
 
-hello - ""
+    if n2 in n_list1 and n2 in n_list2:
+        print("if n2 in both lists reached")
+        n_list3.add(n2)
 
-strings = "texto"
-ints = 123
-boolean = True
-lst = [1, 2, a, b, True]
-dicio = {"chave": "conteudo"}
-tupps = (a, b)
+print(n_list3)

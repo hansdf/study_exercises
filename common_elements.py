@@ -13,11 +13,19 @@ def find_common(list1, list2): #.zip approach
             n_list3.add(n2)
     print(f"Common elements between the two lists are: {n_list3}")
 
-def sets_find_common(list1, list2):
+def sets_find_common(list1, list2): # sets approach
     set1 = set(list1)
     set2 = set(list2)
     common_set = set1&set2
     print(f"Using set approach, common elements between the two lists are: {common_set}")
 
+def find_common_looping(list1, list2): # lists and loops
+    common_elems_list = []
+    for num in list1:
+        if num in list2:
+            common_elems_list.append(num)
+    print(common_elems_list)
+
 find_common(n_list1, n_list2)
 sets_find_common(n_list1, n_list2)
+find_common_looping(n_list1, n_list2)

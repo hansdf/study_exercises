@@ -11,9 +11,13 @@ def binary_find(numlist, target):
         middle_n = int(len(numlist)/2) # index of middle element
         print("middlenum: ", middle_n)
         print("numlist[middle_n]: ", numlist[middle_n])
-        if target == numlist[middle_n]:
+        if numlist[middle_n] == target:
             return print(f"found target: {target} at index: {numlist[middle_n]}")
-        else:
-            middle_n = middle_n/2
+        elif numlist[middle_n] < target:
+            pass
+        elif numlist[middle_n] > target:
+            pass
+        
+        middle_n = middle_n/2
 
 binary_find(nums,4)

@@ -14,4 +14,18 @@ def fizzbuzz(num_end):
         else:
             print(num)
 
-fizzbuzz(int(input("pick a number: ")))
+def fizzbuzz_string(num_end): # string approach
+    for num in range(1, num_end+1):
+        fizzbuzz_s = ""
+        if num % 3 == 0:
+            fizzbuzz_s += "fizz"
+        if num % 5 == 0:
+            fizzbuzz_s += "buzz"
+        elif num % 5 != 0 and num % 3 != 0:
+            fizzbuzz_s += str(num)
+        print(fizzbuzz_s)
+    
+
+# fizzbuzz(35)
+
+fizzbuzz_string(15)

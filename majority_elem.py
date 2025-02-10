@@ -13,13 +13,12 @@ def find_maj_elem(lst):
             hash_counter[n] = 1
         else:
             hash_counter[n] += 1
-    print(hash_counter)
 
     # initiate counter var to store highest in hashmap
     highest_value_so_far = 0
     highest_key_so_far = 0
-    # iterate through hashmap and compare each value against counter, if higher, replace counter with it
 
+    # iterate through hashmap and compare each value against counter, if higher, replace counter with it
     for key in hash_counter:
         print(key, "->", hash_counter[key] )
         if hash_counter[key] > highest_value_so_far:

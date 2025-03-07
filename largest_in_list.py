@@ -9,4 +9,14 @@ def find_largest(list_of_nums):
             largest_so_far = num  
     print(largest_so_far)
 
-find_largest(nums)
+# find_largest(nums)
+
+def sorted_find(nums):
+    s_nums = sorted(nums)
+    max = s_nums[-1]
+    print(nums)
+    print(s_nums)
+    print(max)
+
+
+sorted_find(nums)

@@ -14,4 +14,12 @@ def merge_lists(list1, list2): # very poor optimization, but works
     combined_list.sort()
     print(combined_list)
 
-merge_lists(nums1, nums2)
+# merge_lists(nums1, nums2)
+
+def extend_lists(list1, list2):
+    list1.extend(list2)
+    list1.sort()
+    print(list1)
+
+
+extend_lists(nums1,nums2)

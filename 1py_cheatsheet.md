@@ -22,9 +22,12 @@ Example: len([1,2,3]) # returns 3
 
 ## String Methods:
 
-isalnum()
-Returns True if all characters in the string are alphanumeric (letters and numbers) and there is at least one character; otherwise, False.
-Example: "abc123".isalnum() # returns True
+isalpha() / isdigit() / isalnum()
+Check if the string consists solely of alphabetic characters, digits, or alphanumeric characters respectively.
+Example:
+"abc".isalpha()   # returns True
+"123".isdigit()   # returns True
+"abc123".isalnum()  # returns True
 
 Slicing: array[::-1]
 Returns a reversed copy of a list or string.
@@ -33,6 +36,18 @@ Example: "hello"[::-1] # returns "olleh"
 reversed(iterable)
 Returns an iterator that accesses the given iterable in reverse order. To obtain a list, wrap it with list().
 Example: list(reversed([1,2,3])) # returns [3,2,1]
+
+split()
+Splits a string into a list using a specified delimiter (defaults to whitespace).
+Example: "one,two,three".split(",")  # returns ['one', 'two', 'three']
+
+join(iterable)
+Concatenates a list (or other iterable) of strings into one string, with the string on which it's called as the separator.
+Example: ", ".join(["apple", "banana", "cherry"])  # returns "apple, banana, cherry"
+
+lower()
+Converts all characters in a string to lowercase.
+Example: "Hello World".lower()  # returns "hello world"
 
 ## List Methods
 

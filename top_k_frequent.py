@@ -12,9 +12,17 @@ def k_frequent(numlist,frequency):
         else:
             frequency_counter[num] += 1
     
-    sorted_dict = sorted(frequency_counter)
+    sorted_dict_value = sorted(frequency_counter.items(), key=lambda x:x[1], reverse=True)
+
+    ans = []
+
+    for key in range(frequency):
+        ans.append(sorted_dict_value[key][0])
+
+    return ans
+
     print(f"frequency_counter: {frequency_counter}")
-    print(f"sorted_dict: {sorted_dict}")
+    print(f"sorted_dict: {sorted_dict_value}")
 
 
-k_frequent(nums,k)
+print(k_frequent(nums,k))

@@ -14,13 +14,15 @@ def dfsPrint(graph, source):
     stack = [source]
 
     # Keep going until the stack is empty
-    while stack:
+    while len(stack) > 0:
         current = stack.pop()  # Pop the last element
         print(current)  # Visit the node
 
         # Push neighbors to the stack (in reverse for correct order)
         for neighbor in reversed(graph[current]):
             stack.append(neighbor)
+
+dfsPrint(graph, "a")
 
 # BFS = Breadth-First Search (uses queue - FIFO)
 from collections import deque

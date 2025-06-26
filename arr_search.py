@@ -9,7 +9,7 @@ def find_first(nums,target):
     while left <= right:
         mid = (left + right) // 2
         if nums[mid] == target:
-            if nums[mid-1] == target:
+            if mid > 0 and nums[mid - 1] == target:
                 right = mid - 1
             else:
                 return mid
@@ -17,6 +17,8 @@ def find_first(nums,target):
             right = mid -1 
         elif nums[mid] < target:
             left = mid + 1
+    
+    return -1
 
 def find_last(nums,target):
     left = 0
@@ -25,14 +27,16 @@ def find_last(nums,target):
     while left <= right:
         mid = (left + right) // 2
         if nums[mid] == target:
-            if nums[mid+1] == target:
-                right = mid + 1
+            if mid < len(nums) - 1 and nums[mid + 1] == target:
+                left = mid + 1
             else:
                 return mid
         elif nums[mid] > target:
             right = mid -1 
         elif nums[mid] < target:
             left = mid + 1
+    
+    return -1
 
 def first_and_last(nums,target):
     ret_arr = []
@@ -41,4 +45,3 @@ def first_and_last(nums,target):
     print(ret_arr)
         
 first_and_last(nlist, 5)
-
